@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:"PT Sans Caption", sans-serif;
+   
+}
+body{
+    background-color:#f7ecde ;
+   
+}
+#bookmarker h1 {
+    font-family:'Pacifico', cursive; 
+    font-size: 60px;
+    position: relative;
+   
+}
+#bookmarker h1::after{
+    content: '';
+    width: 300px;
+    height: 20px;
+    background-color: #f9c540;
+    bottom: 30px;
+    left: 50%;
+    transform:translatex(-50%);
+    position: absolute;
+    z-index: 3;
+    z-index: -1;
+    transition: .4s;
+   
+}
+#bookmarker h1:hover:after{
+    height: 40px;   
+}
+
+
+
+#bookmarker h2 {
+  color: #3ea55c; 
+  position: relative;
+  background-image: linear-gradient(to right , green);
+}
+#bookmarker button {
+    
+
+  
+}
+
+#siteName label i {
+    color: black !important; 
+}
+
+

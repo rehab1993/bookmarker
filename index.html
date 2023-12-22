@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@
+100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" 
+rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section id="bookmarker" class="py-5">
+  <div class="container">
+  <h1 class="text-capitalize  py-4  text-center">bookmarker</h1>
+  <div class="row favorite-sit position-relative">
+    <div class="col-lg-12 p-3">
+    <h2 class="fs-3 fw-bold  text-center py-4">
+       <i class="fa fa-solid fa-bookmark"></i>
+      
+           Bookmark your favorite sites
+       <i class="fa fa-solid fa-bookmark position-absolute ms-2"></i>
+       </h2>
+
+       <div id="siteName" class="fw-bold shadow p-4 rounded-2">
+
+        <label for="bookmark" class="my-2">
+          <i class="fa-solid fa-book-bookmark"></i>
+          Site Name
+        </label>
+        <input type="text" id="bookmark" placeholder="Bookmark Name" class="form-control">
+
+        <label for="bookmarkUrl" class="my-2">
+          <i class="fa-solid fa-link"></i>
+          Site URL
+        </label>
+        <input type="text" id="bookmarkUrl" placeholder="Website URL" class="form-control">
+
+        <button class="btn btn-danger px-5 my-3 pointer-event " onclick="newSite()">Submit</button>
+
+       </div>
+  </div>
+  </div>
+
+ 
+  <section class="shadow rounded-2 p-4 my-4">
+    <div class="container">
+      <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col-lg-12">Index</th>
+          <th scope="col-lg-12">Website Name</th>
+          <th scope="col-lg-12">Visit</th>
+          <th scope="col-lg-12">Delete</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableContent" class="">
+        <!-- <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <a class="btn btn-success" onclick="visit()"  id="visit" href="">
+              <i class="fa-solid fa-eye pe-2"></i> 
+              Visit</a>
+          </td>
+          <td>
+            <button class="btn btn-danger">
+              <i class="fa-solid fa-trash-can pe-2" onclick="deleteSite()"></i> 
+              Delete</button>
+          </td>
+        </tr>  -->
+      </tbody>
+    </table>
+  </div>
+  </div>
+  </section>
+
+  
+</div>
+</section>
+
+  
+
+ <script src="js/bootstrap.bundle.min.js"></script>  
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+ <script src="js/main.js">
+
+
+
+ </script>
+</body>
+</html>
